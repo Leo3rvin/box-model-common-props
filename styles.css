@@ -264,7 +264,8 @@ p code, li code{
 }
 
 #section4 li::before{
-    content: 
+    content: ".";
+    margin-right: 0.5rem;
 }
 
 #section5 p:last-of-type{
@@ -332,15 +333,15 @@ footer{
     width: 50%;
     box-shadow: var(--box-shadow-lg);
     }
-    TO DO: add styles to both links in this section that will:
+    /* TO DO: add styles to both links in this section that will:
         - make these links display as block-level elements
         - remove the underline
         - align the text to the center
         - make the font display at 1.1rem
         - make the text bold
         - tell these to be 50% wide in the container
-        - add the large box shadow
-*/
+        - add the large box shadow */
+
 /* ADD SELECTOR AND STYLES HERE */
 
 /* For the first link in this section: */
@@ -368,7 +369,7 @@ footer{
     border-radius: 8px;
 }
 
-/* For the last paragraph in the section */
+/* For the last paragraph in the section
     TO DO: add styles to the last paragraph in this section that will:
         - make the background the teal-rgba color
         - add a 4 pixel dark gray border that is dashed
@@ -381,7 +382,7 @@ footer{
             - top: 32px
             - right: 8px
             - bottom: 16px
-            - left: 60px
+            - left: 60px */
 */
 #section2 div > p:last-of-type {
     background-color: var(--teal-rgba);
@@ -401,7 +402,10 @@ footer{
         - add the small box shadow, using the variable in the root
 */
 #section2 a:first-of-type:hover{
-
+    background-color: var(--dk-blue);
+    color: var(--white);
+    border-color: var(--lt-blue);
+    box-shadow: var(--box-shadow-sm);
 }
 
 #section2 a:last-of-type:hover{
